@@ -123,7 +123,7 @@ export const SimilarProperties: React.FC<{ propertyType: string }> = ({ property
 
         // Create promises for all property types
         const fetchPromises = propertyCategories.map(category => 
-          axios.get(`/api/commercial/${intent}/${category}`)
+          axios.get(`https://rentamigotech.onrender.com/api/commercial/${intent}/${category}`)
         );
 
         // Fetch all properties in parallel

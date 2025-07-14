@@ -34,7 +34,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ propertyId }) => {
     const fetchLocation = async () => {
       try {
         const response = await axios.get(
-          `https://api.rentamigo.in/api/properties/${propertyId}/locations`
+          `https://rentamigotech.onrender.comapi/properties/${propertyId}/locations`
         );
         if (response.data && response.data.length > 0) {
           // Assuming the API returns an array of locations, pick the first one

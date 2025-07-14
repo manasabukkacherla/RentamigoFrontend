@@ -709,7 +709,7 @@ const LeasePlotMain = () => {
 
       console.log("Submitting data:", transformedData);
 
-      const response = await axios.post('/api/commercial/lease/plots', transformedData, {
+      const response = await axios.post('https://rentamigotech.onrender.com/api/commercial/lease/plots', transformedData, {
         headers: {
           'Content-Type': 'application/json'
         }

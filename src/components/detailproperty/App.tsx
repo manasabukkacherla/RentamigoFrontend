@@ -486,7 +486,7 @@ function Propdetail() {
     const fetchPropertyDetails = async () => {
 
       try {
-        const response = await axios.get(`/api/${category}/${listing}/${type}/${propertyId}`);
+        const response = await axios.get(`https://rentamigotech.onrender.com/api/${category}/${listing}/${type}/${propertyId}`);
         console.log(response);
         if (response.data.success) {
           setProperty(response.data.data);

@@ -28,7 +28,7 @@ const RentDetails: React.FC<RentDetailsProps> = ({ propertyId }) => {
         setError(null);
 
         const response = await fetch(
-          `https://api.rentamigo.in/api/properties/${propertyId}/commercials`
+          `https://rentamigotech.onrender.comapi/properties/${propertyId}/commercials`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch property commercials");

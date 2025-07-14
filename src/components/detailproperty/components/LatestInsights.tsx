@@ -55,7 +55,7 @@ export const LatestInsights: React.FC = () => {
       try {
         setIsLoading(true);
         setError(null);
-        const response = await axios.get('https://rentamigotech.onrender.com/api/blog/');
+        const response = await axios.get('https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/blog/');
         const data = response.data.data;
         setMyBlogs(data);
         handleRandomBlog();

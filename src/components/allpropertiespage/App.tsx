@@ -43,7 +43,7 @@ function Allproperties() {
   useEffect(() => {
     const fetchAllProperties = async () => {
       try {
-        const response = await axios.get('/api/allproperties/all');
+        const response = await axios.get('https://rentamigotech.onrender.com/api/allproperties/all');
         const grouped = response.data?.data || {};
 
         const flattenGrouped = (grouped: Record<string, any>) => {
