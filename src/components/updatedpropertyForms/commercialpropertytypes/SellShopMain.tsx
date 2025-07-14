@@ -692,7 +692,7 @@ const SellShopMain = () => {
 
       // Send the data to the backend
       //https://rentamigotech.onrender.com/api/commercial/sell/shops
-      const response = await axios.post('https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/commercial/sell/shops', transformedData, {
+      const response = await axios.post('https://rentamigotech.onrender.com/api/commercial/sell/shops', transformedData, {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`

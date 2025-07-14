@@ -325,7 +325,7 @@ export default function ServicesPage() {
     try {
       const formattedPhoneNumber = `+91${phoneNumber}`; // Adding +91 prefix
       const response = await axios.post(
-        "https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/verify/start",
+        "https://rentamigotech.onrender.com/api/verify/start",
         {
           to: formattedPhoneNumber,
           channel: "sms",
@@ -365,7 +365,7 @@ export default function ServicesPage() {
     try {
       const formattedPhoneNumber = `+91${phoneNumber}`; // Adding +91 prefix
       const response = await axios.post(
-        "https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/verify/check",
+        "https://rentamigotech.onrender.com/api/verify/check",
         {
           to: formattedPhoneNumber,
           code: otp,
@@ -418,7 +418,7 @@ export default function ServicesPage() {
 
     try {
       const response = await axios.post(
-        "https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/service-enquiry",
+        "https://rentamigotech.onrender.com/api/service-enquiry",
         {
           name,
           email,
@@ -443,7 +443,7 @@ export default function ServicesPage() {
       `;
 
         await axios.post(
-          "https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/email/send-email",
+          "https://rentamigotech.onrender.com/api/email/send-email",
           {
             content: emailContent,
             toEmailAddress: email,
@@ -468,7 +468,7 @@ Please follow up with the customer regarding their service request.
 `;
 
         await axios.post(
-          "https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/email/send-email",
+          "https://rentamigotech.onrender.com/api/email/send-email",
           {
             content: companyEmailContent,
             toEmailAddress: "vikranth@rentamigo.in",
