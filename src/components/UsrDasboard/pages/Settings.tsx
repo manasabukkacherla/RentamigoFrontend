@@ -141,7 +141,7 @@ interface Subscription {
   };
     const fetchSubscription = async (id: string) => {
   try {
-    const res  = await fetch(`http://localhost:3000/api/subscription/${id}`);
+    const res  = await fetch(`https://rentamigotech.onrender.com/api/subscription/${id}`);
     const data = await res.json();
 
     if (!res.ok) throw new Error(data.error || "Failed to load subscription");
