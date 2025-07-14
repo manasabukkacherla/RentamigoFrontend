@@ -17,7 +17,7 @@ const Description: React.FC<DescriptionProps> = ({ propertyId }) => {
         setError(null);
 
         const response = await axios.get(
-          `https://api.rentamigo.in/api/properties/${propertyId}/features`
+          `https://rentamigotech.onrender.comapi/properties/${propertyId}/features`
         );
 
         // Extract propertyDescription from the first object in the response array

@@ -78,7 +78,7 @@ const UserStats = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://rentamigotech.onrender.com/api/sign/users');
+        const response = await axios.get('https://rentamigotech.onrender.comhttps://rentamigotech.onrender.com/api/sign/users');
         console.log('API Response:', response); 
         setUsers( Array.isArray(response.data)
         ? response.data
